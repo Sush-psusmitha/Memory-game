@@ -1,0 +1,70 @@
+
+body{
+    background: #cd841f ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h3{
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+}
+
+.game{
+    display: grid;
+    margin: 40px auto;
+    grid-template-columns: repeat(4, 120px);
+    grid-row-gap: 2em;
+    align-items: center;
+    justify-content: center;
+}
+#gameBoard div{
+    height: 150px;
+    width: 80px;
+    border:2px solid rgb(151,151,202);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: #e0e2ff;
+    background-color: #1c1c22;
+
+}
+.cardback {
+    background-color: #9b9bc0; /* Light background color */
+    background-image: 
+        linear-gradient(45deg, #686c99 25%, transparent 25%, transparent 75%, #51578f 75%, #33398a),
+        linear-gradient(45deg, #3a4091 25%, transparent 25%, transparent 75%, #454976 75%, #4e549e);
+    background-position: 
+        0 0, 
+        10px 10px;
+    background-size: 20px 20px;
+    background-repeat: repeat;
+    border: 2px solid #444fdc; /* Optional border to match the style */
+}
+
+
+/* .cardback{
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: linear-gradient(135deg,#444fdc);
+    background-position: 10px 0, 10px 0,0 0, 0 0;
+    background-size: 10px 10px;
+    background-repeat: repeat;
+} */
+#gameboard div:hover{
+    cursor: pointer;
+}
+
+.won{
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    align-items: center;
+    color: #fff;
+    width: 500px;
+    margin: 0px auto;
+}
